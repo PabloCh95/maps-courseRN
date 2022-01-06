@@ -9,7 +9,7 @@
  */
 
 import React, {useState} from 'react';
-import {SafeAreaView, StyleSheet, View, Button, Text} from 'react-native';
+import {SafeAreaView, StyleSheet, View, Button} from 'react-native';
 import Map from './src/components/Map/Map';
 import ModalMap from './src/components/Modal/ModalMap';
 import Panel from './src/components/Panel/Panel';
@@ -46,7 +46,7 @@ export default function App(): JSX.Element {
     setVisibilityFilter('all-puntos');
     setIsVisible(true);
   };
-  console.log(visibilityFilter);
+
   return (
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
